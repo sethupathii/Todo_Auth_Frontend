@@ -30,7 +30,10 @@ const BTN = () => {
             } else if (response?.status === 200) {
                 localStorage.setItem("userInfo", JSON.stringify(response.data));
                 setErrorMessage('');
-                navigate('/home');
+                setTimeout(() => {
+                    navigate('/home');
+                  }, 1000);
+             
             }
         } catch (error) {
             console.log('Error during login:', error);
