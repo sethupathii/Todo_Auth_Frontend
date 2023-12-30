@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 import { Container, Button } from 'react-bootstrap';
 import axios from 'axios';
@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet';
 
 const Home = () => {
   const [ress, setRess] = useState({})
-  const history = useHistory();
+  const history = useNavigate();
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("userInfo"))
@@ -43,7 +43,7 @@ const Home = () => {
 
 
   const Clicked = () => {
-    history.push('/Todo');
+    history('/Todo');
   }
   return (
     <div className="back">
