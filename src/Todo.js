@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './todo_styles/boot.css'
 import Ap from "./AddTodo";
-import axios from 'axios';
 import { Helmet } from "react-helmet";
 
 const Todo = () => {
