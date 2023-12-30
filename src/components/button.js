@@ -22,7 +22,7 @@ const BTN = () => {
         try {
             const response = await axios.post(`https://todo-vl9r.onrender.com/login`, formData);
             console.log(response);
-            
+
             if (response.data === "Invalid Username or Password") {
                 setErrorMessage("Invalid User name or Password");
             } else if (response.data === "Server Busy") {
@@ -30,10 +30,7 @@ const BTN = () => {
             } else if (response?.status === 200) {
                 localStorage.setItem("userInfo", JSON.stringify(response.data));
                 setErrorMessage('');
-                setTimeout(() => {
-                    navigate('/home');
-                  }, 1000);
-             
+                navigate('/home');
             }
         } catch (error) {
             console.log('Error during login:', error);
@@ -42,7 +39,7 @@ const BTN = () => {
 
     return (
         <div style={{ backgroundImage: `url('/Assets/blob-scene-haikei.png')` }}>
-             <Helmet>
+            <Helmet>
                 <title>Login-Page</title>
                 <meta name="description" content="LogIn-page" />
             </Helmet>
