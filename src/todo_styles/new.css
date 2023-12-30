@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #252525;
+    color: white;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: 'Rubik Bubbles'; */
+    font-family: 'Rubik Maps';
+    /* font-size: 25px; */
+    /* background-image: url('../public/Assets/background_img.jpg'); */
+    background-image: url('../../public/Assets/back-pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .mainDiv {
+    margin: 0 auto;
+    max-width: 600px; 
+    /* background-color: #eee; */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    /* color: #333; */
+    color: white;
+  }
+  
+  .input_holder {
+    display: flex;
+    gap: 10px;
+    position: sticky;
+    top: 230px;
+  }
+  
+  .InText{
+    /* flex: 1; */
+    width: 5000px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #252525;
+  }
+
+  input::placeholder{
+    color: black;
+  }
+  
+  button {
+    padding: 10px 20px;
+    /* background-color: #696969; */
+    /* color: #fff; */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .lists {
+    margin-top: 20px;
+    display: grid;
+    /* gap: 10px; */
+    /* background-color: black; */
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    /* overflow-y: scroll; */
+  }
+  
+  .dataTo {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* To keep icons on the same line */
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow content to wrap within the defined width */
+    width: 560px;
+    color: white;
+    cursor: default;
+  }
+  
+  .content {
+    flex: 1;
+    white-space: normal;
+    /* Default is normal */
+    word-break: break-word;
+    /*Break words when necessary */
+    margin-right: 10px;
+    /* Optional margin between content and icons */
+    text-align: start;
+  }
+  /* .dataTo:hover{
+    background-color: #696969;
+  } */
+  
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    cursor: pointer;
+  }
+  
+  .Dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background-color: #696969;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .CloseIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .popup h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .popup__input_holder {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup__input_holder input,
+  .popup__input_holder button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .popup__input_holder button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup__input_holder button:hover {
+    background-color:black;
+  }
+  
+/*Media Queries*/
+
+@media (max-width: 576px) {
+  .dataTo {
+      width: 350px;
+  }
+}
+
+@media (max-width: 405px) {
+  .dataTo {
+      width: 300px;
+  }
+}
+  

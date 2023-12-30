@@ -1,0 +1,34 @@
+/* 
+
+.container {
+    padding: 20px;
+    max-width: 400px;
+    background-color: #f7f7f7;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: black;
+} */
+
+
+/* Home.css */
+
+.back {
+    margin: 0;
+    /* background-image: url('/public/Assets/AKZNHx.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height to cover the entire viewport */
+    width: 100vw;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 400px;
+    background-color: #f7f7f7;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: black;
+  }
+  
