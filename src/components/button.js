@@ -92,7 +92,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import '../styles/Button.css';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import MetaTags from 'react-meta-tags';
 
 const BTN = () => {
     const [formData, setFormData] = useState({
@@ -129,7 +130,7 @@ const BTN = () => {
 
     return (
         <div style={{ backgroundImage: `url('/Assets/blob-scene-haikei.png')` }}>
-            <Helmet key={Math.random()}>
+            <MetaTags key={Math.random()}>
                 <title>Login-Page</title>
                 <meta name="description" content="LogIn-page" />
                 <meta property="og:site_name" content="Login" />
@@ -140,7 +141,7 @@ const BTN = () => {
                 <meta property="og:image:type" content="image/jpg" />
                 <meta property="og:image:width" content="300" />
                 <meta property="og:image:height" content="300" />
-            </Helmet>
+            </MetaTags>
             <div className="backgrounds">
                 <div className="shapes"></div>
                 <form className="form" onSubmit={handleSubmit}>
