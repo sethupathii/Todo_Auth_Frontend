@@ -9,6 +9,7 @@
     "axios": "^1.6.2",
     "bcrypt": "^5.1.1",
     "framer-motion": "^10.16.16",
+    "gatsby-plugin-react-helmet": "^6.13.0",
     "jsonwebtoken": "^9.0.2",
     "next": "^14.0.4",
     "react": "^18.2.0",
@@ -24,9 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postbuild": "react-snap",
-    "predeploy": "npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
