@@ -42,6 +42,14 @@ const BTN = () => {
             <Helmet>
                 <title>Login-Page</title>
                 <meta name="description" content="LogIn-page" />
+                <meta property="og:site_name" content="Login" />
+                <meta property="og:title" content="Login" />
+                <meta property="og:description" content="Login page" />
+                <meta property="og:image" content="https://thumbs.dreamstime.com/b/web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-121903546.jpg" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image:type" content="image/jpg" />
+                <meta property="og:image:width" content="300" />
+                <meta property="og:image:height" content="300" />
             </Helmet>
             <div className="backgrounds">
                 <div className="shapes"></div>

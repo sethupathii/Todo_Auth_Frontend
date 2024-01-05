@@ -50,6 +50,14 @@ const Home = () => {
       <Helmet>
         <title>Home-Page</title>
         <meta name='description' content='Home page' />
+        <meta property="og:site_name" content="Todo" />
+        <meta property="og:title" content="Todo" />
+        <meta property="og:description" content="Todo_Authentication" />
+        <meta property="og:image" content="https://albion-backend.s3.ap-south-1.amazonaws.com/properties/1b8fe7e708e2f24168dcc5dfbe71e638.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
       </Helmet>
       <Container>
         <h1>Welcome to our Website</h1>
