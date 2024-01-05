@@ -12,12 +12,12 @@ function App() {
 
     return (
         <>
-            <Router basename='sample'>
+            <Router>
                 <Routes>
                     <Route path='/' element={<SignIn />} />
-                    <Route path='/sample/login' element={<BTN />} />
-                    <Route path='/sample/home' element={<Home />} />
-                    <Route path='/sample/todo' element={<Todo/>} />
+                    <Route path='/login' element={<BTN />} />
+                    <Route path='/home' element={<Home />} />
+                    <Route path='/todo' element={<Todo/>} />
                 </Routes>
             </Router>
 
