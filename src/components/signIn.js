@@ -89,8 +89,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../styles/SignIn.css';
 import axios from 'axios';
-// import { Helmet } from "react-helmet";
-import MetaTags from 'react-meta-tags';
+import { Helmet } from "react-helmet";
+
 
 const SignIn = () => {
 
@@ -131,7 +131,7 @@ const SignIn = () => {
 
     return (
         <div className="body">
-            <MetaTags key={Math.random()}>
+            <Helmet key={Math.random()}>
                 <title>Registration-Page</title>
                 <meta name="description" content="signIn-page" />
                 <meta property="og:site_name" content="Registration Page" />
@@ -142,7 +142,7 @@ const SignIn = () => {
                 <meta property="og:image:type" content="image/jpg" />
                 <meta property="og:image:width" content="300" />
                 <meta property="og:image:height" content="300" />
-            </MetaTags>
+            </Helmet>
             <div className="background">
                 <form className="for" onSubmit={handleSubmit}>
                     <h3>Create an Account</h3>
