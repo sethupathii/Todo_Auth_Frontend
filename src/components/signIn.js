@@ -44,7 +44,7 @@ const SignIn = () => {
 
     return (
         <div className="body">
-            <Helmet>
+            <Helmet key={Math.random()}>
                 <title>Registration-Page</title>
                 <meta name="description" content="signIn-page" />
                 <meta property="og:site_name" content="Registration Page" />

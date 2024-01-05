@@ -39,7 +39,7 @@ const BTN = () => {
 
     return (
         <div style={{ backgroundImage: `url('/Assets/blob-scene-haikei.png')` }}>
-            <Helmet>
+            <Helmet key={Math.random()}>
                 <title>Login-Page</title>
                 <meta name="description" content="LogIn-page" />
                 <meta property="og:site_name" content="Login" />

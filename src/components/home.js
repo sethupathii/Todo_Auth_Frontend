@@ -47,7 +47,7 @@ const Home = () => {
   }
   return (
     <div className="back">
-      <Helmet>
+      <Helmet key={Math.random()}>
         <title>Home-Page</title>
         <meta name='description' content='Home page' />
         <meta property="og:site_name" content="Todo" />
